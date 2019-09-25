@@ -11,7 +11,7 @@ oid_section = new_oids
 [ new_oids ]
 organizationIdentifier = 2.5.4.97 # OpenSSL may not recognize this OID so need to add.
 [ req ]
-default_bits = 2048 # RSA key size
+default_bits = 4096 # RSA key size
 encrypt_key = yes # Protect private key: yes or no. yes recommended
 default_md = sha256 # MD to use. sha256 recommended
 utf8 = yes # Input is UTF-8.

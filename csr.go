@@ -20,7 +20,7 @@ import (
 // qcType should be one of qcstatements.QSEALType or qcstatements.QWACType.
 func GenerateCSR(
 	countryCode string, orgName string, orgID string, commonName string, roles []qcstatements.Role, qcType asn1.ObjectIdentifier) ([]byte, *rsa.PrivateKey, error) {
-	key, err := rsa.GenerateKey(rand.Reader, 2048)
+	key, err := rsa.GenerateKey(rand.Reader, 4096)
 	if err != nil {
 		return nil, nil, fmt.Errorf("failed to generate key pair: %v", err)
 	}
